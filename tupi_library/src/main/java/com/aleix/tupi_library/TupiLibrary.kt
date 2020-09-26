@@ -23,12 +23,12 @@ class TupiLibrary {
         builder.show()
     }
 
-    fun View.hideKeyboard() {
+    fun View.hideKeyboardOriginal() {
         val inputManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputManager.hideSoftInputFromWindow(windowToken, 0)
     }
 
     fun hideKeyboard(view: View) {
-        view.hideKeyboard()
+        view.hideKeyboardOriginal()
     }
 }
