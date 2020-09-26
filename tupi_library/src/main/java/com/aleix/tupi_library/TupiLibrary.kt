@@ -28,7 +28,7 @@ class TupiLibrary {
         inputManager.hideSoftInputFromWindow(windowToken, 0)
     }
 
-    fun hideKey(view: View) {
+    fun hideKeyboard(view: View) {
         view.hideKeyboard()
     }
 }
